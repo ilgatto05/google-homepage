@@ -9,20 +9,29 @@
         margin-right: auto;
         margin-left: auto;
     }
+    #boton-acceso-directo{
+        width: 100px;
+        height: 100px;
+    }
     #caja{
+        padding-left: 40px;
+        font-size: 15px;
+        border:0px;
+        background-color: white;
         border-radius: 25px;
         height: 40px;
-        max-width: 584px;
+        width: 584px;
         display: block;
         margin:auto;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+        box-shadow:-2px -2px 5px rgba(65, 24, 24, 0.19), 2px 2px 5px rgba(0,0,0,0.19);
     }
 </style>
 </head>
 <body>
     <div><img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
     </div>
-    <div id="caja"><form ><input type="text" placeholder="Realizar una búsqueda en Google o escribir una URL"></form></div>
+    <div ><form><input id="caja" type="text" placeholder="Realizar una búsqueda en Google o escribir una URL" ></form></div>
+    <div><button id="boton-acceso-directo">Agregar acceso directo</button></div>
 </body>
 
 </html>
