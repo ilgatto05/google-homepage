@@ -10,8 +10,50 @@
         margin-left: auto;
     }
     #boton-acceso-directo{
+        border-radius: 2px;
+        display:block;
+        margin: auto;
+        background-color: white;
+        border: 0px;
         width: 100px;
         height: 100px;
+    }
+    #boton-acceso-directo:hover{
+        background-color: #EFEFEF;
+    }
+    .div-cruz{
+        border-radius: 50%;
+        padding: 9 9 10 9;
+        display: block;
+        margin-top: 5%;
+        margin-left:auto ;
+        margin-right: auto;
+        margin-bottom: auto;
+        width: 12px;
+        background-color: #e0e0e0;
+    }
+   .cruz{
+        display: block;
+        border-radius: 1px;
+        margin-top: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        background-color: #3a3a3a;
+        height: 12px;
+        width: 2px;
+       
+    }
+    
+    .cruz::after{
+        margin: auto auto;
+        border-radius: 1px;
+        display: block; 
+        background-color: #414141;
+        content: "";
+        height: 12px;
+        width: 2px;
+        transform: rotate(90deg);
     }
     #caja{
         padding-left: 40px;
@@ -28,10 +70,11 @@
 </style>
 </head>
 <body>
+    <header></header>
     <div><img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
     </div>
     <div ><form><input id="caja" type="text" placeholder="Realizar una búsqueda en Google o escribir una URL" ></form></div>
-    <div><button id="boton-acceso-directo">Agregar acceso directo</button></div>
+    <div><button style="direction: ltr; text-align: center; overflow: hidden;" id="boton-acceso-directo" ><div class="div-cruz"><div class="cruz"></div></div> acceso directo</button></div>
 </body>
 
 </html>
